@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="572dp"
+    android:background="@drawable/dakabac"
+    tools:context=".Fragment_Set">
+
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <TextView
+        android:id="@+id/yiny"
+        android:layout_width="380dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="112dp"
+        android:gravity="center"
+        android:background="@drawable/backset"
+        android:text="TextView"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/fortune"
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:background="@drawable/backset"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/yiny"
+        app:layout_constraintEnd_toStartOf="@+id/stars"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sitext"
+        app:layout_constraintVertical_bias="0.691" />
+
+    <TextView
+        android:id="@+id/stars"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:gravity="center"
+        android:text="TextView"
+        android:background="@drawable/backset"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="@+id/fortune"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fortune"
+        app:layout_constraintTop_toTopOf="@+id/fortune"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sitext"
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:background="@drawable/backset"
+        android:gravity="center"
+        android:text="TextView"
+        android:textSize="30dp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/timeET"
+        android:layout_width="126dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="24"
+        android:textColor="#FFC107"
+        android:textSize="35dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView3"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="126dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="28dp"
+        android:gravity="center"
+        android:text="MM/dd"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/sitext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeET"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="88dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="4dp"
+        android:text="运势:"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toTopOf="@+id/fortune"
+        app:layout_constraintEnd_toEndOf="@+id/fortune"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/fortune" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="88dp"
+        android:layout_height="20dp"
+        android:text="幸运指数:"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/stars"
+        app:layout_constraintEnd_toEndOf="@+id/stars"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/stars" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:textColor="#FFC107"
+        android:layout_marginStart="48dp"
+        android:text="Hi~"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/sitext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/timeET" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/more"
+        android:gravity="center"
+        android:text="更多内容"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yiny" />
+
+    <![CDATA[
+
+    24dp"
+        android:layout_marginBottom="12dp"
+        android:text="TextView"
+        app:layout_constraintBottom_toTopOf="@+id/sitext"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+]]>
+</androidx.constraintlayout.widget.ConstraintLayout>

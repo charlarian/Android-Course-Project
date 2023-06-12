@@ -1,0 +1,262 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.hnucm.C202001020212"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml
+10
+11    <queries package="com.hnucm.C202001020212" >
+11-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:5:14-40
+12        <intent>
+12-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:6:9-8:18
+13            <action android:name="android.media.action.IMAGE_CAPTURE" />
+13-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:7:13-73
+13-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:7:21-70
+14        </intent>
+15        <intent>
+15-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:9:9-11:18
+16            <action android:name="android.media.action.ACTION_VIDEO_CAPTURE" />
+16-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:10:13-80
+16-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:10:21-77
+17        </intent>
+18    </queries> <!-- 网络权限 -->
+19    <!-- 相机权限 -->
+20    <!-- 读写文件权限 -->
+21    <uses-feature android:name="android.hardware.camera.any" />
+21-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:15:5-64
+21-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:15:19-61
+22    <uses-feature android:name="android.hardware.camera.any" />
+22-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:15:5-64
+22-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:15:19-61
+23
+24    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+24-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:18:5-77
+24-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:18:22-74
+25    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+25-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:19:5-71
+25-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:19:22-68
+26    <uses-permission android:name="android.permission.CAMERA" />
+26-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:20:5-65
+26-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:20:22-62
+27    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+27-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:21:5-76
+27-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:21:22-73
+28    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+28-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:22:5-80
+28-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:22:22-77
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:23:5-66
+29-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:23:22-63
+30    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+30-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:24:5-75
+30-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:24:22-72
+31    <uses-permission android:name="android.permission.BLUETOOTH" />
+31-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:25:5-68
+31-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:25:22-65
+32    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" /> <!-- 访问网络，进行地图相关业务数据请求，包括地图数据，路线规划，POI检索等 -->
+32-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:26:5-82
+32-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:26:22-79
+33    <uses-permission android:name="android.permission.INTERNET" /> <!-- 获取网络状态，根据网络状态切换进行数据请求网络转换 -->
+33-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:27:5-67
+33-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:27:22-64
+34    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 读取外置存储。如果开发者使用了so动态加载功能并且把so文件放在了外置存储区域，则需要申请该权限，否则不需要 -->
+34-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:28:5-79
+34-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:28:22-76
+35    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- 写外置存储。如果开发者使用了离线地图，并且数据写在外置存储区域，则需要申请该权限 -->
+35-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:29:5-80
+35-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:29:22-77
+36    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+36-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:30:5-81
+36-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:30:22-78
+37
+38    <application
+38-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:32:5-65:19
+39        android:allowBackup="true"
+39-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:33:9-35
+40        android:allowClearUserData="true"
+40-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:34:9-42
+41        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+41-->[androidx.core:core:1.7.0] C:\Users\Administrator\.gradle\caches\transforms-3\d79cd730aff89e16bbe6bbee05f6ceb1\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+42        android:debuggable="true"
+43        android:icon="@mipmap/ic_launcher"
+43-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:35:9-43
+44        android:label="@string/app_name"
+44-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:36:9-41
+45        android:requestLegacyExternalStorage="true"
+45-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:37:9-52
+46        android:roundIcon="@mipmap/ic_launcher_round"
+46-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:38:9-54
+47        android:supportsRtl="true"
+47-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:39:9-35
+48        android:testOnly="true"
+49        android:theme="@style/Theme.SHENKUN"
+49-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:40:9-45
+50        android:usesCleartextTraffic="true" >
+50-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:41:9-44
+51        <activity
+51-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:42:9-44:40
+52            android:name="com.hnucm.C202001020212.SetActivity"
+52-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:43:13-40
+53            android:exported="false" />
+53-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:44:13-37
+54        <activity
+54-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:45:9-47:40
+55            android:name="com.hnucm.C202001020212.MainActivity2"
+55-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:46:13-42
+56            android:exported="false" />
+56-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:47:13-37
+57        <activity
+57-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:48:9-50:40
+58            android:name="com.hnucm.C202001020212.WebActivity"
+58-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:49:13-40
+59            android:exported="false" />
+59-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:50:13-37
+60        <activity
+60-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:51:9-53:40
+61            android:name="com.hnucm.C202001020212.MainActivity"
+61-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:52:13-41
+62            android:exported="false" />
+62-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:53:13-37
+63        <activity
+63-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:54:9-62:20
+64            android:name="com.hnucm.C202001020212.FirstActivity"
+64-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:55:13-42
+65            android:exported="true" >
+65-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:56:13-36
+66            <intent-filter>
+66-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:57:13-61:29
+67                <action android:name="android.intent.action.MAIN" />
+67-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:58:17-69
+67-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:58:25-66
+68
+69                <category android:name="android.intent.category.LAUNCHER" />
+69-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:60:17-77
+69-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:60:27-74
+70            </intent-filter>
+71        </activity>
+72        <activity android:name="com.hnucm.C202001020212.HomeActivity" />
+72-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:63:9-50
+72-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:63:19-47
+73        <activity android:name="com.hnucm.C202001020212.WebActivity2" />
+73-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:64:9-50
+73-->D:\SHENKUN6\shenkun\src\main\AndroidManifest.xml:64:19-47
+74
+75        <provider
+75-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:10:9-18:20
+76            android:name="com.luck.picture.lib.basic.PictureFileProvider"
+76-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:11:13-74
+77            android:authorities="com.hnucm.C202001020212.luckProvider"
+77-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:12:13-64
+78            android:exported="false"
+78-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:13:13-37
+79            android:grantUriPermissions="true" >
+79-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:14:13-47
+80            <meta-data
+80-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:15:13-17:57
+81                android:name="android.support.FILE_PROVIDER_PATHS"
+81-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:16:17-67
+82                android:resource="@xml/ps_file_paths" />
+82-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:17:17-54
+83        </provider>
+84
+85        <service
+85-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:20:9-23:56
+86            android:name="com.luck.picture.lib.service.ForegroundService"
+86-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:21:13-74
+87            android:enabled="true"
+87-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:22:13-35
+88            android:foregroundServiceType="location" />
+88-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:23:13-53
+89
+90        <activity
+90-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:25:9-29:20
+91            android:name="com.luck.picture.lib.basic.PictureSelectorSupporterActivity"
+91-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:26:13-87
+92            android:configChanges="orientation|keyboardHidden|screenSize"
+92-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:27:13-74
+93            android:theme="@style/Base.Theme.NoActionBar" >
+93-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:28:13-58
+94        </activity>
+95        <activity
+95-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:30:9-34:20
+96            android:name="com.luck.picture.lib.basic.PictureSelectorTransparentActivity"
+96-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:31:13-89
+97            android:configChanges="orientation|keyboardHidden|screenSize"
+97-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:32:13-74
+98            android:theme="@style/Picture.Theme.Translucent" >
+98-->[io.github.lucksiege:pictureselector:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\7d671ea0c46741c639129f8a9b8150fa\transformed\pictureselector-v3.0.9\AndroidManifest.xml:33:13-61
+99        </activity>
+100        <activity
+100-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:10:9-14:72
+101            android:name="com.yalantis.ucrop.UCropActivity"
+101-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:11:13-60
+102            android:configChanges="orientation|keyboardHidden|screenSize"
+102-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:12:13-74
+103            android:screenOrientation="portrait"
+103-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:13:13-49
+104            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+104-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:14:13-69
+105        <activity
+105-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:15:9-19:72
+106            android:name="com.yalantis.ucrop.UCropMultipleActivity"
+106-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:16:13-68
+107            android:configChanges="orientation|keyboardHidden|screenSize"
+107-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:17:13-74
+108            android:screenOrientation="portrait"
+108-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:18:13-49
+109            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+109-->[io.github.lucksiege:ucrop:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\4253826aa8dfcc99048a4a407013bffc\transformed\ucrop-v3.0.9\AndroidManifest.xml:19:13-69
+110        <activity
+110-->[io.github.lucksiege:camerax:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\f24c3987338f5141fdc05371a337fe9b\transformed\camerax-v3.0.9\AndroidManifest.xml:10:9-13:61
+111            android:name="com.luck.lib.camerax.PictureCameraActivity"
+111-->[io.github.lucksiege:camerax:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\f24c3987338f5141fdc05371a337fe9b\transformed\camerax-v3.0.9\AndroidManifest.xml:11:13-70
+112            android:configChanges="orientation|keyboardHidden|screenSize"
+112-->[io.github.lucksiege:camerax:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\f24c3987338f5141fdc05371a337fe9b\transformed\camerax-v3.0.9\AndroidManifest.xml:12:13-74
+113            android:theme="@style/Base.Theme.NoActionBar" />
+113-->[io.github.lucksiege:camerax:v3.0.9] C:\Users\Administrator\.gradle\caches\transforms-3\f24c3987338f5141fdc05371a337fe9b\transformed\camerax-v3.0.9\AndroidManifest.xml:13:13-58
+114
+115        <service
+115-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Administrator\.gradle\caches\transforms-3\4b39677fb636b4656bc829896ab94535\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:26:9-35:19
+116            android:name="androidx.camera.core.impl.MetadataHolderService"
+116-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Administrator\.gradle\caches\transforms-3\4b39677fb636b4656bc829896ab94535\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:27:13-75
+117            android:enabled="false"
+117-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Administrator\.gradle\caches\transforms-3\4b39677fb636b4656bc829896ab94535\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:28:13-36
+118            android:exported="false" >
+118-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Administrator\.gradle\caches\transforms-3\4b39677fb636b4656bc829896ab94535\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:29:13-37
+119            <meta-data
+119-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Administrator\.gradle\caches\transforms-3\4b39677fb636b4656bc829896ab94535\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:32:13-34:89
+120                android:name="androidx.camera.core.impl.MetadataHolderService.DEFAULT_CONFIG_PROVIDER"
+120-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Administrator\.gradle\caches\transforms-3\4b39677fb636b4656bc829896ab94535\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:33:17-103
+121                android:value="androidx.camera.camera2.Camera2Config$DefaultProvider" />
+121-->[androidx.camera:camera-camera2:1.1.0-beta02] C:\Users\Administrator\.gradle\caches\transforms-3\4b39677fb636b4656bc829896ab94535\transformed\camera-camera2-1.1.0-beta02\AndroidManifest.xml:34:17-86
+122        </service>
+123
+124        <provider
+124-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+125            android:name="androidx.startup.InitializationProvider"
+125-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:27:13-67
+126            android:authorities="com.hnucm.C202001020212.androidx-startup"
+126-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:28:13-68
+127            android:exported="false" >
+127-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:29:13-37
+128            <meta-data
+128-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+129                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+129-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:32:17-75
+130                android:value="androidx.startup" />
+130-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Administrator\.gradle\caches\transforms-3\7a8fe7a0d27e6111d8f26a88e3f3f946\transformed\emoji2-1.0.0\AndroidManifest.xml:33:17-49
+131            <meta-data
+131-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Administrator\.gradle\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+132                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+132-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Administrator\.gradle\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+133                android:value="androidx.startup" />
+133-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Administrator\.gradle\caches\transforms-3\7c2b991ffee7d4db452bfe70f5605b71\transformed\lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+134        </provider>
+135    </application>
+136
+137</manifest>
